@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Anastasiya Garbuz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Anastasiya Garbuz</h1>
+    </header>
+    <main>
+      <section class="summary">
+        <h2>Summary</h2>
+        <p>I am a fast learner, fluent in English and easy to get into the new team. Love to draw, to select the combination of colors and shapes, invent beautiful ways to solve challenging problems. Ready to study and work really hard!</p>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <p>C/C++, HTML, CSS, SQL, VBA, start working with GIT and JS.</p>
+      </section>
+      <section class="code-examples">
+        <h2>Code-examples</h2>
+        <h3>A random task from RSSchool</h3>
+        <p>module.exports = function longestConsecutiveLength(array) {
+            if (array.length == 0) return 0;
+          
+            let longestStreak = 1;
+            let set = new Set(array);
+          
+            for (let number of set.values()) {
+                let compared = number - 1,
+                    streak = 1;
+                while (set.has(compared)) {
+                    set.delete(compared);
+                    compared--;
+                    streak++;
+                }
+                compared = number + 1;
+                while (set.has(compared)) {
+                    set.delete(compared);
+                    compared++;
+                    streak++;
+                }
+                longestStreak = (streak > longestStreak) ? streak : longestStreak;
+            }
+            return longestStreak;
+          }</p>
+      </section>
+      <section class="experience"></section>
+      <section class="education"></section>
+      <section class="english-level"></section>
+    </main>
+  </body>
+</html>
